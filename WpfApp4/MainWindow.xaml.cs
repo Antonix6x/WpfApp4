@@ -20,5 +20,35 @@ namespace WpfApp4
         {
             InitializeComponent();
         }
+
+        private void zatwierdz_Click(object sender, RoutedEventArgs e)
+        {
+            bool czyPoprawnie = true;
+            bool czyMalpa = true;
+            bool czyRowne = true;
+            if (!email.Text.ToString().Contains('0'))
+            {
+                czyPoprawnie = false;
+                czyMalpa = false;
+            }else
+            if (!string.Equals(powtorzhaslo.Password.ToString(), haslo.Password.ToString()))
+                    {
+                czyPoprawnie = false;
+                czyMalpa = false;
+            }
+            if (!czyMalpa) {
+                komunikat.Text = "Niepoprawny email";
+            }
+            if (!czyRowne)
+            {
+                komunikat.Text = "Hasła nie są identyczne";
+            }
+            if (!czyPoprawnie)
+            {
+                komunikat.Text = "Witaj " + email.Text;
+            }
+
+
+        }
     }
 }
