@@ -26,7 +26,7 @@ namespace WpfApp4
             bool czyPoprawnie = true;
             bool czyMalpa = true;
             bool czyRowne = true;
-            if (!email.Text.ToString().Contains('0'))
+            if (!email.Text.ToString().Contains('@'))
             {
                 czyPoprawnie = false;
                 czyMalpa = false;
@@ -43,7 +43,7 @@ namespace WpfApp4
             {
                 komunikat.Text = "Hasła nie są identyczne";
             }
-            if (!czyPoprawnie)
+            if (czyPoprawnie)
             {
                 komunikat.Text = "Witaj " + email.Text;
             }

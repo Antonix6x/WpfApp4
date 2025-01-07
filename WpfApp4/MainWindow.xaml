@@ -13,9 +13,9 @@
         <Label Content="Podaj hasło:" HorizontalAlignment="Left" Margin="29,159,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
         <Label Content="Powtórz hasło:" HorizontalAlignment="Left" Margin="29,241,0,0" VerticalAlignment="Top" Width="104" FontWeight="Bold"/>
         <Button x:Name="zatwierdz" Content="Zatwierdź" HorizontalAlignment="Left" Margin="71,331,0,0" VerticalAlignment="Top" Height="48" Width="106" Background="#FF9BF1E8" FontWeight="Bold" Click="zatwierdz_Click"/>
-        <PasswordBox x:Name="haslo" HorizontalAlignment="Left" Margin="29,0,0,0" VerticalAlignment="Center" Width="190" Height="36"/>
+        <PasswordBox x:Name="haslo" HorizontalAlignment="Left" Margin="29,193,0,0" VerticalAlignment="Top" Width="190" Height="36"/>
         <PasswordBox x:Name="powtorzhaslo" HorizontalAlignment="Left" Margin="29,272,0,0" VerticalAlignment="Top" Width="190" Height="36" />
-        <TextBlock x:Name="komunikat" HorizontalAlignment="Left" Margin="517,185,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="komunikat" HorizontalAlignment="Left" Margin="517,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="WhiteSmoke" Height="123" Width="153"/>
 
     </Grid>
 </Window>
